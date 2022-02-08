@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'cursive';
 }
 
 body {
@@ -92,13 +92,15 @@ td {
 }
 
 .container {
-    position: absolute;
-    right: 0;
+    display: flex;
+    position: fixed;
+    /* right: 0; */
     width: 60vw;
     height: 100vh;
     background: #f1f1f1;
     margin-top: -695 px;
     margin-left: 289px;
+    align-items: center;
 }
 
 .container .header {
@@ -179,6 +181,10 @@ td {
     margin-top: 10vh;
     min-height: 90vh;
     background: #f1f1f1;
+    display: flex;
+    margin-right: -645px;
+    align-items: center;
+    padding-left: 80px;
 }
 
 .container .content .cards {
@@ -187,6 +193,7 @@ td {
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
+    width: min-content;
 }
 
 .container .content .cards .card {
@@ -271,5 +278,75 @@ td {
     .container .content .content-2 .recent-payments table th:nth-child(2),
     .container .content .content-2 .recent-payments table td:nth-child(2) {
         display: none;
+    }
+}
+
+#cardStyle, #cardStyle1{
+    height: 190px;
+    width: 260px;
+    margin-top: 70px;
+    border-radius: 10px;
+    background-color: #1c214b;
+    color: white;
+    padding-bottom: 30px;
+}
+
+#mainCard, #mainCard1{
+    width: 260px;
+    height: 235px;
+    border-radius: 10px;
+    color: white;
+}
+
+#mainCard1{
+    height: 510px
+}
+
+#cardStyle1{
+    height: 350px;
+    background-color: #5746eb;
+    margin-top: -2px;
+    margin-left: -1px;
+}
+
+#avatar{
+    border-radius: 50%;  
+    margin-top: 25px;
+    width: 120px;
+    margin-bottom: 50px;
+    border: 2px solid white;
+}
+
+.headingDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title{
+    padding-top: 8px;
+}
+
+h3, h1{
+    color: white;
+    
+}
+
+.optionSelect{
+    height: 125px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+a:visited ,a:hover{
+    color: white !important;
+}
+#daily, #weekly, #monthly{
+    cursor: pointer;
+}
+
+@media screen and (min-width: 1200px){
+    .container, .container-lg, .container-md, .container-sm, .container-xl {
+        max-width: 100% !important;
     }
 }
