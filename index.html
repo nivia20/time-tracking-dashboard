@@ -18,7 +18,7 @@
     <div class="container">
         <div class="content">
             <div class="card" id="mainCard1" style="background-color: #1c214b;">
-                <div class="card" id="cardStyle1">
+                <div class="card" id="cardStyle1"><!-- profile card -->
                     <div class="card-body">
                         <img id="avatar" src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar">
                         <p class="card-text">Report for</p>
@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div class="card-body">
-                    <div class="optionSelect" style="color: grey">
+                    <div class="optionSelect" style="color: grey"><!-- buttons in profile card -->
                         <li id="daily">&nbsp;<span><a>Daily</a></span> </li>
                         <li id="weekly">&nbsp;<span><a>Weekly</a></span> </li>
                         <li id="monthly">&nbsp;<span><a>Monthly</a></span> </li>
@@ -37,7 +37,7 @@
                 <div class="cardBlock">
                     <div class="card" id="mainCard" style="background-color: #fe8a64;">
                         <div class="card" id="cardStyle">
-                            <div class="card-body">
+                            <div class="card-body"><!-- 1st card -->
                                 <div class="headingDiv">
                                     <h3 id="10"></h3>
                                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
@@ -49,7 +49,7 @@
                     </div>
                     <div class="card" id="mainCard" style="background-color: #56c2e6;">
                         <div class="card" id="cardStyle">
-                            <div class="card-body">
+                            <div class="card-body"><!-- 2nd card -->
                                 <div class="headingDiv">
                                     <h3 id="11"></h3>
                                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
@@ -61,21 +61,12 @@
                     </div>
                     <div class="card" id="mainCard" style="background-color: #ff5e7d;">
                         <div class="card" id="cardStyle">
-                            <div class="card-body">
-                                <!-- <div class="headingDiv">
-                                    <h4 class="card-title">John Doe</h4>
-                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                                </div>
-                              <p class="card-text">Some example text some example text. John Doe is an architect and engineer</p>
-                              <a href="#" class="btn btn-primary">See Profile</a> -->
+                            <div class="card-body"><!-- 3rd card -->
                                 <div class="headingDiv">
                                     <h3 id="12"></h3>
                                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                                </div>
-
-                                
+                                </div> 
                                 <h1 id="02">hrs</h1>
-                                
                                 <h3 id="2"> Last week :</h3>
                             </div>
                         </div>
@@ -84,132 +75,75 @@
                 <div class="cardBlock">
                     <div class="card" id="mainCard" style="background-color: #4fce80;">
                         <div class="card" id="cardStyle">
-                            <div class="card-body">
-                                <!-- <div class="headingDiv">
-                                    <h4 class="card-title">John Doe</h4>
-                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                                </div>
-                                <p class="card-text">Some example text some example text. John Doe is an architect and
-                                    engineer</p>
-                                <a href="#" class="btn btn-primary">See Profile</a> -->
+                            <div class="card-body"><!-- 4th card -->
                                 <div class="headingDiv">
                                     <h3 id="13"></h3>
                                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                                </div>
-                                
+                                </div> 
                                 <h1 id="03">hrs</h1>
-                                
                                 <h3 id="3"> Last week :</h3>
                             </div>
                         </div>
                     </div>
                     <div class="card" id="mainCard" style="background-color: #7433d2;">
                         <div class="card" id="cardStyle">
-                            <div class="card-body">
-                                <!-- <div class="headingDiv">
-                                    <h4 class="card-title">John Doe</h4>
-                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                                </div>                                <p class="card-text">Some example text some example text. John Doe is an architect and
-                                    engineer</p>
-                                <a href="#" class="btn btn-primary">See Profile</a> -->
+                            <div class="card-body"><!-- 5th card -->
                                 <div class="headingDiv">
                                     <h3 id="14"></h3>
                                     <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
                                 </div>
-
-                                
                                 <h1 id="04">hrs</h1>
-                                
                                 <h3 id="4"> Last week :</h3>
                             </div>
                         </div>
                     </div>
-
                     <div class="card" id="mainCard" style="background-color: #f1c65a;">
                         <div class="card" id="cardStyle">
-                            <div class="card-body">
-                                <!-- <div class="headingDiv">
-                                    <h4 class="card-title">John Doe</h4>
-                                    <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                                </div>
-                                <p class="card-text">Some example text some example text. John Doe is an architect and
-                                    engineer</p>
-                                <a href="#" class="btn btn-primary">See Profile</a> -->
+                            <div class="card-body"><!-- 6th card -->
                                 <div class="box">
                                     <div class="headingDiv">
                                         <h3 id="15"></h3>
                                         <i class="fa fa-ellipsis-h" aria-hidden="true"></i>
-                                    </div>
-                                    
+                                    </div> 
                                     <h1 id="05">hrs</h1>
-                                    
                                     <h3 id="5"> Last week :</h3>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-
                 </div>
-
-
             </div>
         </div>
-
         <script>
-
-
-            fetch("data.json").then(res => res.json()).then(data => {
-
+            fetch("data.json").then(res => res.json()).then(data => { // fetching data from data.json file
                 for (var i = 0; i < data.length; i++) {
-                    console.log("jjjjj", data[i].timeframes.daily.current)
-                    document.getElementById("1" + i).innerHTML = data[i].title
-                    document.getElementById("0" + i).innerHTML = data[i].timeframes.daily.current + "hrs"
-                    document.getElementById(i).innerHTML += data[i].timeframes.daily.previous + "hrs"
-
-
-
-
-                    var button1 = document.getElementById("daily");
-                    var button2 = document.getElementById("weekly");
-                    var button3 = document.getElementById("monthly");
-
-                    //console.log("yyy",data[i].timeframes.daily.current)
-                    // document.getElementById("12").innerHTML +=data[i].timeframes.daily.current
-
-
+                    console.log("data", data[i].timeframes.daily.current)
+                    document.getElementById("1" + i).innerHTML = data[i].title // mapping 1st elememt(title)
+                    document.getElementById("0" + i).innerHTML = data[i].timeframes.daily.current + "hrs"// mapping 2nd element 
+                    document.getElementById(i).innerHTML += data[i].timeframes.daily.previous + "hrs"// mapping 3rd elemet in the card
+                    var button1 = document.getElementById("daily"); //mapping daily button to button1
+                    var button2 = document.getElementById("weekly");//mapping weekly button to button2
+                    var button3 = document.getElementById("monthly");//mapping monthly button to button3
                 }
-                button1.onclick = function () {
+                button1.onclick = function () { // what should happen after clicking "daily" button
                     for (var i = 0; i < data.length; i++) {
-                        /*  document.getElementById(""+i).innerHTML +=data[0].timeframes.daily.current
-                          document.getElementById("12").innerHTML +=data[0].timeframes.daily.current*/
                         document.getElementById("0" + i).innerHTML = data[i].timeframes.daily.current + "hrs"
                         document.getElementById(i).innerHTML = "Last week  " + data[i].timeframes.daily.previous + "hrs"
-                    }
-                    
+                    } 
                 }
-                button2.onclick = function () {
+                button2.onclick = function () {// what should happen after clicking "weekly" button
                     for (var i = 0; i < data.length; i++) {
                         document.getElementById("0" + i).innerHTML = data[i].timeframes.weekly.current + "hrs"
                         document.getElementById(i).innerHTML = "Last week  " + data[i].timeframes.weekly.previous + "hrs"
-
                     }
-
                 }
-                button3.onclick = function () {
+                button3.onclick = function () {// what should happen after clicking "monthly" button
                     for (var i = 0; i < data.length; i++) {
                         document.getElementById("0" + i).innerHTML = data[i].timeframes.monthly.current + "hrs"
                         document.getElementById(i).innerHTML = "Last week  " + data[i].timeframes.monthly.previous + "hrs"
-
                     }
-
                 }
-
-
-
             })
-
-
         </script>
 </body>
 
