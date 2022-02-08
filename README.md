@@ -32,6 +32,6 @@ In browser run Localhost:8000
 ## Usage
 Go throgh the daily,weekly and monthly buttons so that user can view the particular data for each cases\
 
-This project is open source and available under the [... License](). -->
+This project is open source and available under the [https://github.com/nivia20/time-tracking-dashboard/tree/develop]
 
 

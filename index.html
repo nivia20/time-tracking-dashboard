@@ -125,19 +125,19 @@
                     var button2 = document.getElementById("weekly");//mapping weekly button to button2
                     var button3 = document.getElementById("monthly");//mapping monthly button to button3
                 }
-                button1.onclick = function () { // what should happen after clicking "daily" button
+                button1.onclick = function () { // Action after clicking "daily" button
                     for (var i = 0; i < data.length; i++) {
                         document.getElementById("0" + i).innerHTML = data[i].timeframes.daily.current + "hrs"
                         document.getElementById(i).innerHTML = "Last week  " + data[i].timeframes.daily.previous + "hrs"
                     } 
                 }
-                button2.onclick = function () {// what should happen after clicking "weekly" button
+                button2.onclick = function () {// Action after clicking "weekly" button
                     for (var i = 0; i < data.length; i++) {
                         document.getElementById("0" + i).innerHTML = data[i].timeframes.weekly.current + "hrs"
                         document.getElementById(i).innerHTML = "Last week  " + data[i].timeframes.weekly.previous + "hrs"
                     }
                 }
-                button3.onclick = function () {// what should happen after clicking "monthly" button
+                button3.onclick = function () {// Action after clicking "monthly" button
                     for (var i = 0; i < data.length; i++) {
                         document.getElementById("0" + i).innerHTML = data[i].timeframes.monthly.current + "hrs"
                         document.getElementById(i).innerHTML = "Last week  " + data[i].timeframes.monthly.previous + "hrs"
