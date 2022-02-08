@@ -17,11 +17,11 @@
         </div>
         <ul>
             
-            <li id="daily"><img src="school.png" alt="">&nbsp;<span>Daily</span> </li>
-            <li id="weekly"><img src="payment.png" alt="">&nbsp;<span>weeekly</span> </li>
+            <li id="daily">&nbsp;<span>Daily</span> </li>
+            <li id="weekly">&nbsp;<span>weeekly</span> </li>
             
           
-            <li id="monthly"><img src="settings.png" alt="">&nbsp;<span>Monthly</span> </li>
+            <li id="monthly">&nbsp;<span>Monthly</span> </li>
         </ul>
         <script>
         
@@ -31,10 +31,12 @@
                 for(var i=0; i<data.length; i++){
                  console.log("jjjjj",data[i].timeframes.daily.current)
                     document.getElementById("1"+i).innerHTML +=data[i].title
-                    // document.getElementById("1"+i).innerHTML +=data[i].title
-                    // document.getElementById("1"+i).innerHTML +=data[i].title
+                    document.getElementById("0"+i).innerHTML +=data[i].timeframes.daily.current
+                    document.getElementById(i).innerHTML +=data[i].timeframes.daily.previous
 
                 
+
+                    
                 var button= document.getElementById("daily");
                 var button= document.getElementById("weekly");
                 var button= document.getElementById("monthly");
@@ -49,6 +51,9 @@
             document.getElementById("12").innerHTML +=data[0].timeframes.daily.current*/
             document.getElementById("12").innerHTML =data[0].timeframes.daily.current
             //document.getElementById("rt").disabled=true
+           }
+           button.onclick=function(){
+
            }
                 
                 
@@ -66,8 +71,9 @@
                 <div class="card">
                     <div class="box">
                         <h3 id="10"></h3>
-                        <h1 id="00"></h1>
-                        <h3 id="0"> </h3>
+                        
+                      <p> <h1 id="00">hrs</h1></p>
+                       <h3 id="0"> Last week :</h3>
                         
                     </div>
                     <div class="icon-case">
@@ -76,8 +82,10 @@
                 </div>
                 <div class="card">
                     <div class="box">
-                        <h1 id="11"></h1>
-                        <h3></h3>
+                        <h3 id="11"></h3>
+                        
+                        <p> <h1 id="01">hrs</h1></p>
+                         <h3 id="1"> Last week :</h3>
                     </div>
                     <div class="icon-case">
                         <img src="teachers.png" alt="">
@@ -86,8 +94,10 @@
             
                 <div class="card">
                     <div class="box">
-                        <h1 id="12"></h1>
-                        <h3>Schools</h3>
+                        <h3 id="12"></h3>
+                        
+                        <p> <h1 id="02">hrs</h1></p>
+                         <h3 id="2"> Last week :</h3>
                     </div>
                     <div class="icon-case">
                         <img src="schools.png" alt="">
@@ -97,8 +107,10 @@
                 <div class="cardBlock">
                     <div class="card">
                         <div class="box">
-                            <h1>2194</h1>
                             <h3 id="13"></h3>
+                        
+                            <p> <h1 id="03">hrs</h1></p>
+                             <h3 id="3"> Last week :</h3>
                         </div>
                         <div class="icon-case">
                             <img src="students.png" alt="">
@@ -106,8 +118,10 @@
                     </div>
                     <div class="card">
                         <div class="box">
-                            <h1 id="15"></h1>
-                            <h3>Teachers</h3>
+                            <h3 id="14"></h3>
+                        
+                      <p> <h1 id="04">hrs</h1></p>
+                       <h3 id="4"> Last week :</h3>
                         </div>
                         <div class="icon-case">
                             <img src="teachers.png" alt="">
@@ -116,8 +130,10 @@
                 
                     <div class="card">
                         <div class="box">
-                            <h1 id="14"></h1>
-                            <h3>Schools</h3>
+                            <h3 id="15"></h3>
+                        
+                      <p> <h1 id="05">hrs</h1></p>
+                       <h3 id="5"> Last week :</h3>
                         </div>
                         <div class="icon-case">
                             <img src="schools.png" alt="">
