@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Admin Panel</title>
+</head>
+
+<body>
+   
+    <div class="side-menu">
+        <div class="brand-name">
+            <h1>Jeremi jhonson</h1>
+        </div>
+        <ul>
+            
+            <li id="daily"><img src="school.png" alt="">&nbsp;<span>Daily</span> </li>
+            <li id="weekly"><img src="payment.png" alt="">&nbsp;<span>weeekly</span> </li>
+            
+          
+            <li id="monthly"><img src="settings.png" alt="">&nbsp;<span>Monthly</span> </li>
+        </ul>
+        <script>
+        
+        
+            fetch("data.json").then(res => res.json()).then(data =>{
+              
+                for(var i=0; i<data.length; i++){
+                 console.log("jjjjj",data[i].timeframes.daily.current)
+                    document.getElementById("1"+i).innerHTML +=data[i].title
+                    // document.getElementById("1"+i).innerHTML +=data[i].title
+                    // document.getElementById("1"+i).innerHTML +=data[i].title
+
+                
+                var button= document.getElementById("daily");
+                var button= document.getElementById("weekly");
+                var button= document.getElementById("monthly");
+                
+                 //console.log("yyy",data[i].timeframes.daily.current)
+                // document.getElementById("12").innerHTML +=data[i].timeframes.daily.current
+                
+               
+             }
+           button.onclick=function(){
+          /*  document.getElementById(""+i).innerHTML +=data[0].timeframes.daily.current
+            document.getElementById("12").innerHTML +=data[0].timeframes.daily.current*/
+            document.getElementById("12").innerHTML =data[0].timeframes.daily.current
+            //document.getElementById("rt").disabled=true
+           }
+                
+                
+                
+            })
+            
+           
+         </script>
+    </div>
+    <div class="container">
+      
+        <div class="content">
+            <div class="cards">
+                <div class="cardBlock">
+                <div class="card">
+                    <div class="box">
+                        <h3 id="10"></h3>
+                        <h1 id="00"></h1>
+                        <h3 id="0"> </h3>
+                        
+                    </div>
+                    <div class="icon-case">
+                        <img src="students.png" alt="">
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="box">
+                        <h1 id="11"></h1>
+                        <h3></h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="teachers.png" alt="">
+                    </div>
+                </div>
+            
+                <div class="card">
+                    <div class="box">
+                        <h1 id="12"></h1>
+                        <h3>Schools</h3>
+                    </div>
+                    <div class="icon-case">
+                        <img src="schools.png" alt="">
+                    </div>
+                </div>
+                </div>
+                <div class="cardBlock">
+                    <div class="card">
+                        <div class="box">
+                            <h1>2194</h1>
+                            <h3 id="13"></h3>
+                        </div>
+                        <div class="icon-case">
+                            <img src="students.png" alt="">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <div class="box">
+                            <h1 id="15"></h1>
+                            <h3>Teachers</h3>
+                        </div>
+                        <div class="icon-case">
+                            <img src="teachers.png" alt="">
+                        </div>
+                    </div>
+                
+                    <div class="card">
+                        <div class="box">
+                            <h1 id="14"></h1>
+                            <h3>Schools</h3>
+                        </div>
+                        <div class="icon-case">
+                            <img src="schools.png" alt="">
+                        </div>
+                    </div>
+                    </div>
+            
+               
+            </div>
+            
+           
+        </div>
+    </div>
+</body>
+
+</html>
